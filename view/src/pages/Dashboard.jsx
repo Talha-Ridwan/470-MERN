@@ -4,6 +4,7 @@ import BookingsList from '../components/BookedAppointments';
 import Forum from '../components/Forum';
 import Quotes from '../components/Quotes';
 import '../styles/styles.css';
+import Challenge from '../components/Challenge';
 
 const Dashboard = () => {
   return (
@@ -16,6 +17,9 @@ const Dashboard = () => {
       </div>
       <div className="section forum-section">
         <Forum />
+      </div>
+      <div className='challenge-section'>
+        <Challenge />
       </div>
     </div>
   );

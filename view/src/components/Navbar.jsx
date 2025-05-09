@@ -27,6 +27,12 @@ const Navbar = () => {
     const handleDB = async() =>{
         navigate('/');
     }
+    const handleBreath = async()=>{
+        navigate('/breathing')
+    }
+    const handleResource = async()=>{
+        navigate('/resources')
+    }
 
     return (
         <nav className="navbar">
@@ -37,6 +43,12 @@ const Navbar = () => {
 
                 <button className="therapist-btn" onClick={handleTP}>
                     Therapists
+                </button>
+                <button className="breathing-btn" onClick={handleBreath}>
+                    IE
+                </button>
+                <button className="resource-btn" onClick={handleResource}>
+                    Resources
                 </button>
                 <button className="logout-btn" onClick={handleLogout}>
                     Logout
